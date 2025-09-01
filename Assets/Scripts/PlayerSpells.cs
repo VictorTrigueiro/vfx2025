@@ -14,7 +14,7 @@ public class PlayerSpells : MonoBehaviour
     {
         if (Input.GetKeyDown(projectileKey))
         {
-            CastProjectile();
+            VFXQ();
         }
         if (Input.GetKeyDown(buffKey))
         {
@@ -30,7 +30,7 @@ public class PlayerSpells : MonoBehaviour
         }
     }
 
-    public void CastProjectile()
+    public void VFXQ()
     {
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo))
         {
