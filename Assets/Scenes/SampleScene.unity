@@ -119,87 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &152820927
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1960343686248633771, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_Name
-      value: buff 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.517375
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.321
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142687563830752459, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5644441700505222014, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.r
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2125,7 @@ MonoBehaviour:
   ultimateKey: 114
   projectilePrefab: {fileID: 3570209819009006478, guid: 647c032e8d97a7b4b993c820fdfbb97f, type: 3}
   projectileLifetime: 1
-  buffPrefab: {fileID: 751882697325462884, guid: 16f130fad8b932643a8afe5e9c270ac2, type: 3}
+  buffPrefab: {fileID: 1960343686248633771, guid: 4609e9ba4adc34f45aade8777da7657b, type: 3}
   aoePrefab: {fileID: 2467344293638845242, guid: e84d4318d4623904198c39ab4bbeafa8, type: 3}
   ultimatePrefab: {fileID: 2467344293638845242, guid: 92869f9145ecf5047bddbb78dd229e05, type: 3}
   projectileSpeed: 18
@@ -2612,4 +2531,3 @@ SceneRoots:
   - {fileID: 1667422941}
   - {fileID: 1300617485}
   - {fileID: 530309385}
-  - {fileID: 152820927}
