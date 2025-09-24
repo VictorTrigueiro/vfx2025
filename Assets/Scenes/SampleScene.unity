@@ -2013,6 +2013,8 @@ GameObject:
   - component: {fileID: 1300617484}
   - component: {fileID: 1300617483}
   - component: {fileID: 1300617482}
+  - component: {fileID: 1300617488}
+  - component: {fileID: 1300617487}
   - component: {fileID: 1300617486}
   m_Layer: 0
   m_Name: Player
@@ -2040,7 +2042,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -2138,6 +2140,44 @@ MonoBehaviour:
   ultimateIsBuff: 0
   ultimateIsAOE: 1
   ultimateIsTargeted: 0
+--- !u!114 &1300617487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300617481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cde190841cee1149a95ebb4f61acc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableTime: 3
+  reEnableTime: 5
+--- !u!114 &1300617488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300617481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b08364317f42cb4ea3c67b785c4bdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 1300617485}
+  startDelay: 0
+  intervalBetweenSpawns: 2
+  prefabsToToggle:
+  - prefabToSpawn: {fileID: 5547040698340477325, guid: d791c8cc9e15ace43925d936e238df4f, type: 3}
+    disableTime: 2
+    reEnableTime: 3
+    destroyAfterCycle: 1
+  - prefabToSpawn: {fileID: 3092972268714718701, guid: 1adc76227722fa14fb757bbaf096d3bf, type: 3}
+    disableTime: 1
+    reEnableTime: 3
+    destroyAfterCycle: 1
 --- !u!1 &1667422935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,6 +2416,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1138254389372573845, guid: 1a2bd7028b2214a4ab84326b52c2b720, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3584544779062753909, guid: 1a2bd7028b2214a4ab84326b52c2b720, type: 3}
       propertyPath: lengthInSec
       value: 4
@@ -2434,7 +2478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3690522515232447296, guid: 1a2bd7028b2214a4ab84326b52c2b720, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5672743104561867643, guid: 1a2bd7028b2214a4ab84326b52c2b720, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
